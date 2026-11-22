@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Práticas para criar sites e conteúdos digitais acessíveis.">
+  <title>Acessibilidade digital | Acesso para Todos</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="JS/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Acesso para Todos - página inicial"><span class="brand-mark" aria-hidden="true">A+</span><span>Acesso <strong>para Todos</strong></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"><span class="sr-only">Abrir ou fechar menu</span><span aria-hidden="true">☰</span></button>
+    <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a><a  href="fisica.html">Acessibilidade física</a><a aria-current="page" href="digital.html">Digital</a><a  href="comunicacao.html">Comunicação</a><a  href="conscientizacao.html">Conscientização</a>
+    </nav>
+  </div></header>
+  <div class="access-toolbar" aria-label="Ferramentas de acessibilidade"><div class="container toolbar-inner">
+    <span class="toolbar-label">Acessibilidade</span><button type="button" data-font="decrease" aria-label="Diminuir tamanho do texto">A−</button><button type="button" data-font="reset" aria-label="Restaurar tamanho do texto">A</button><button type="button" data-font="increase" aria-label="Aumentar tamanho do texto">A+</button><button type="button" data-contrast aria-pressed="false">Alto contraste</button>
+  </div></div>
+  <main id="conteudo">
+    <section class="page-hero"><div class="container"><p class="eyebrow">INTERNET PARA TODAS AS PESSOAS</p><h1>Acessibilidade digital</h1><p class="lead">Um site acessível pode ser compreendido e utilizado por pessoas com diferentes habilidades, dispositivos e tecnologias assistivas.</p></div></section>
+    <section class="section container content-layout">
+      <div class="article-content">
+        <figure class="topic-figure">
+          <img src="IMG/acessibilidade-digital.jpg" alt="Pessoa utilizando um computador com recursos visuais e de áudio para acessibilidade." loading="lazy">
+          <figcaption>Pessoa utilizando um computador com recursos visuais e de áudio para acessibilidade.</figcaption>
+        </figure>
+        
+        <h2>O que é acessibilidade digital?</h2><p>É o cuidado para que sites, aplicativos, documentos e serviços digitais possam ser percebidos, compreendidos, navegados e utilizados pelo maior número possível de pessoas.</p>
+        <h2>Boas práticas em sites</h2><ul><li><strong>Texto alternativo:</strong> imagens informativas devem ter uma descrição útil no atributo <code>alt</code>.</li><li><strong>Contraste adequado:</strong> texto e fundo precisam ter contraste suficiente para facilitar a leitura.</li><li><strong>Navegação por teclado:</strong> menus, links e botões devem funcionar sem depender do mouse.</li><li><strong>Estrutura semântica:</strong> títulos e regiões como <code>header</code>, <code>nav</code> e <code>main</code> ajudam tecnologias assistivas.</li><li><strong>Legendas e transcrições:</strong> vídeos e áudios devem oferecer alternativas ao conteúdo sonoro.</li><li><strong>Formulários identificados:</strong> cada campo precisa de um rótulo claro e instruções compreensíveis.</li></ul>
+        <h2>Leitores de tela</h2><p>Leitores de tela são programas que interpretam o conteúdo exibido e o apresentam por voz ou por saída em braille. Uma página com títulos organizados, links descritivos e controles corretamente identificados tende a ser mais fácil de navegar com essas ferramentas.</p>
+        <h2>Teste o seu site</h2><p>Tente navegar usando apenas a tecla Tab, confira se o foco está visível e amplie o texto. Também é importante testar com pessoas com deficiência e utilizar ferramentas de avaliação como apoio, sem tratá-las como substitutas dos testes com usuários.</p>
+        <div class="tip-box"><strong>Dica:</strong> evite links vagos como “clique aqui”. Prefira textos que expliquem para onde o link leva.</div>
+      
+      </div>
+      <aside class="side-note"><h2>Para lembrar</h2><p>A acessibilidade digital deve ser considerada desde o começo do desenvolvimento, e não apenas como um ajuste final.</p><a href="conscientizacao.html">Veja atitudes inclusivas →</a></aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p><strong>Acesso para Todos</strong><br>Informação e conscientização sobre acessibilidade.</p><p class="footer-small">Projeto acadêmico — Programação Web - Pedro Andrade</p></div></footer>
+</body>
+</html>
